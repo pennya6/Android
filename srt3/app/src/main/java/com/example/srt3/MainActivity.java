@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ImageButton imageButton;
 
-    Button mbtn,pbtn;
-    TextView nbtn;
-    int curNum=0;
+    Button mbtn,pbtn,mbtn2,pbtn2,mbtn3,pbtn3,mbtn4,pbtn4,mbtn5,pbtn5,mbtn6,pbtn6;
+    TextView nbtn,nbtn2,nbtn3,nbtn4,nbtn5,nbtn6;
+
+    int curNum=0,curNum2=0,curNum3=0,curNum4=0,curNum5=0,curNum6=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,26 @@ public class MainActivity extends AppCompatActivity {
         mbtn=(Button) findViewById(R.id.minus_button1);
         nbtn=(TextView) findViewById(R.id.textView1);
         pbtn=(Button) findViewById(R.id.plus_button1);
+
+        mbtn2=(Button) findViewById(R.id.minus_button2);
+        nbtn2=(TextView) findViewById(R.id.textView2);
+        pbtn2=(Button) findViewById(R.id.plus_button2);
+
+        mbtn3=(Button) findViewById(R.id.minus_button3);
+        nbtn3=(TextView) findViewById(R.id.textView3);
+        pbtn3=(Button) findViewById(R.id.plus_button3);
+
+        mbtn4=(Button) findViewById(R.id.minus_button4);
+        nbtn4=(TextView) findViewById(R.id.textView4);
+        pbtn4=(Button) findViewById(R.id.plus_button4);
+
+        mbtn5=(Button) findViewById(R.id.minus_button5);
+        nbtn5=(TextView) findViewById(R.id.textView5);
+        pbtn5=(Button) findViewById(R.id.plus_button5);
+
+        mbtn6=(Button) findViewById(R.id.minus_button6);
+        nbtn6=(TextView) findViewById(R.id.textView6);
+        pbtn6=(Button) findViewById(R.id.plus_button6);
 
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +92,125 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        mbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum2<=0){
+                    nbtn2.setText("0");
+                }else {
+                    curNum2--;
+                    nbtn2.setText(curNum2+"");
+                }
+            }
+        });
+
+        pbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum2>=20){
+                    nbtn2.setText("20");
+                }else{
+                    curNum2++;
+                    nbtn2.setText(curNum2+"");
+                }
+            }
+        });
+        mbtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum3<=0){
+                    nbtn3.setText("0");
+                }else {
+                    curNum3--;
+                    nbtn3.setText(curNum3+"");
+                }
+            }
+        });
+
+        pbtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum3>=20){
+                    nbtn3.setText("20");
+                }else{
+                    curNum3++;
+                    nbtn3.setText(curNum3+"");
+                }
+            }
+        });
+
+        mbtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum4<=0){
+                    nbtn4.setText("0");
+                }else {
+                    curNum4--;
+                    nbtn4.setText(curNum4+"");
+                }
+            }
+        });
+
+        pbtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum4>=20){
+                    nbtn4.setText("20");
+                }else{
+                    curNum4++;
+                    nbtn4.setText(curNum4+"");
+                }
+            }
+        });
+
+        mbtn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum5<=0){
+                    nbtn5.setText("0");
+                }else {
+                    curNum5--;
+                    nbtn5.setText(curNum5+"");
+                }
+            }
+        });
+        pbtn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum5>=20){
+                    nbtn5.setText("20");
+                }else{
+                    curNum5++;
+                    nbtn5.setText(curNum5+"");
+                }
+            }
+        });
+
+        mbtn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum6<=0){
+                    nbtn6.setText("0");
+                }else {
+                    curNum6--;
+                    nbtn6.setText(curNum6+"");
+                }
+            }
+        });
+        pbtn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum6>=20){
+                    nbtn6.setText("20");
+                }else{
+                    curNum6++;
+                    nbtn6.setText(curNum6+"");
+                }
+            }
+        });
+
+
 
     }
 

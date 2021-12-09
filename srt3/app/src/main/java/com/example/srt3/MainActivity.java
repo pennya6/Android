@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar mytoolbar;
     BottomNavigationView bottomNavigationView;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("");
 
+        imageButton=(ImageButton) findViewById(R.id.imageButton3);
+        imageButton.bringToFront();
     }
 
     @Override

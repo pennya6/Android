@@ -62,19 +62,19 @@
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="175dp"
+                android:layout_width="141dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:background="@color/white"
-                android:text="출발" />
+                android:text="출발\n 수서 " />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="175dp"
+                android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
                 android:background="@color/white"
-                android:text="도착" />
+                android:text="도착\n 광주송정" />
 
             <ImageButton
                 android:id="@+id/imageButton3"
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/white"
-            android:text="출발일" />
+            android:text="출발일  2021년 12월 1일(수) 14시 이후" />
 
         <TextView
             android:id="@+id/textView13"

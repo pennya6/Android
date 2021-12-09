@@ -4,7 +4,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button mbtn,pbtn,mbtn2,pbtn2,mbtn3,pbtn3,mbtn4,pbtn4,mbtn5,pbtn5,mbtn6,pbtn6;
     TextView nbtn,nbtn2,nbtn3,nbtn4,nbtn5,nbtn6;
-
     int curNum=0,curNum2=0,curNum3=0,curNum4=0,curNum5=0,curNum6=0;
 
     @Override
@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         mbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         pbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         pbtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -151,7 +148,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         pbtn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -209,9 +205,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
     }
 
     @Override
@@ -226,6 +219,10 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.chat:
                 showDialog();
+                return true;
+            case R.id.people:
+                Intent intent=new Intent(getApplicationContext(),SecondActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

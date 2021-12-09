@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/subRotate"
+    android:title="버튼회전">
+</item>
+    <item
+        android:id="@+id/subsize"
+        android:title="버튼2배확대">
+    </item>
+</menu>

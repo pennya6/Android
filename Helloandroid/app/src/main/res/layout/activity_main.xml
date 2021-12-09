@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+  <CheckBox
+      android:id="@+id/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="안드로이드폰"
+      android:checked="false"/>
+  <CheckBox
+      android:id="@+id/iphone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="아이폰"
+      android:checked="true"/>
+
+  <CheckBox
+      android:id="@+id/window"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="윈도폰" />
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="숫자1"/>
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="숫자2"/>
+
+    <Button
+        android:id="@+id/BtnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strAdd"/>
+
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+

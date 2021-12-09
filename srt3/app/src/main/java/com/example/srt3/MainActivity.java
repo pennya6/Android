@@ -9,7 +9,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -17,9 +20,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
+
     Toolbar mytoolbar;
     BottomNavigationView bottomNavigationView;
     ImageButton imageButton;
+
+    Button mbtn,pbtn;
+    TextView nbtn;
+    int curNum=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +43,35 @@ public class MainActivity extends AppCompatActivity {
 
         imageButton=(ImageButton) findViewById(R.id.imageButton3);
         imageButton.bringToFront();
+
+        mbtn=(Button) findViewById(R.id.minus_button1);
+        nbtn=(TextView) findViewById(R.id.textView1);
+        pbtn=(Button) findViewById(R.id.plus_button1);
+
+        mbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum<=0){
+                    nbtn.setText("0");
+                }else {
+                    curNum--;
+                    nbtn.setText(curNum+"");
+                }
+            }
+        });
+
+        pbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(curNum>=20){
+                    nbtn.setText("20");
+                }else{
+                    curNum++;
+                    nbtn.setText(curNum+"");
+                }
+            }
+        });
+
     }
 
     @Override
@@ -76,4 +113,5 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog=builder.create();
         dialog.show();
     }
+
 }

@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     TextView nbtn,nbtn2,nbtn3,nbtn4,nbtn5,nbtn6;
     int curNum=0,curNum2=0,curNum3=0,curNum4=0,curNum5=0,curNum6=0;
 
+    //출발 및 도착지 선택 부분 구현
+    Button button_start,button_arrival;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -203,6 +206,16 @@ public class MainActivity extends AppCompatActivity {
                     curNum6++;
                     nbtn6.setText(curNum6+"");
                 }
+            }
+        });
+
+        //출발지 및 도착지 선택
+        button_arrival=(Button) findViewById(R.id.button6);
+        button_arrival.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),travelActivity.class);
+                startActivity(intent);
             }
         });
     }

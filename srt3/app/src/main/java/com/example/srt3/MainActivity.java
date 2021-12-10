@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     int curNum=0,curNum2=0,curNum3=0,curNum4=0,curNum5=0,curNum6=0;
 
     //출발 및 도착지 선택 부분 구현
-    Button button_start,button_arrival;
+    Button button_start,button_arrival,button_date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -215,6 +216,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),travelActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //출발일시
+        button_date=(Button) findViewById(R.id.button4);
+        button_date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StartActivity.class);
                 startActivity(intent);
             }
         });

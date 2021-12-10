@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Notification;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.Menu;
@@ -21,7 +22,7 @@ public class travelActivity extends AppCompatActivity {
     ImageButton choice_srt,choice_korail,change_btn;
     boolean i=true,i2=true;
 
-    Button start_btn,arrival_btn;
+    Button start_btn,arrival_btn,choice_btn1,check_btn;
 
     @Override
     protected void onCreate(Bundle bundle){
@@ -39,6 +40,8 @@ public class travelActivity extends AppCompatActivity {
         arrival_btn=(Button)findViewById(R.id.button7);
 
         change_btn=(ImageButton)findViewById(R.id.imageButton2);
+
+        check_btn=(Button)findViewById(R.id.button2);
 
         choice_srt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +64,7 @@ public class travelActivity extends AppCompatActivity {
             }
         });
 
+        //색지정 메소드
         start_btn.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -69,7 +73,22 @@ public class travelActivity extends AppCompatActivity {
                     start_btn.setTextColor(R.color.purple_300);
                     arrival_btn.setTextColor(R.color.grey);
                     i2=true;
+
+                    //역변경
+                    switch (view.getId()){
+                        case R.id.button8:
+                            choice_btn1=(Button) findViewById(R.id.button8); //지역선택
+                            start_btn.setText((String)choice_btn1.getText());
+                            break;
+                        case R.id.button9:
+                            choice_btn1=(Button) findViewById(R.id.button9); //지역선택
+                            start_btn.setText((String) choice_btn1.getText());
+                            break;
+                    }
                 }
+
+
+
             }
         });
         arrival_btn.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +103,7 @@ public class travelActivity extends AppCompatActivity {
             }
         });
 
+        //위치변경
         change_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,6 +112,13 @@ public class travelActivity extends AppCompatActivity {
 
                 arrival_btn.setText(change2);
                 start_btn.setText(change1);
+            }
+        });
+
+        check_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

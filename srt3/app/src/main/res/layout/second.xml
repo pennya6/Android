@@ -25,19 +25,21 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="돌아가기"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="HardcodedText,MissingConstraints" />
 
         <ListView
             android:id="@+id/listview1"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/me2"/>
+            android:src="@drawable/me2"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView18"
@@ -45,7 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="30dp"
-            android:text="김시연(201958008)" />
+            android:text="김시연(201958008)"
+            tools:ignore="HardcodedText" />
 
 
     </LinearLayout>

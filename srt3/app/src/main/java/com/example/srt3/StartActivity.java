@@ -1,5 +1,6 @@
 package com.example.srt3;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,6 +17,7 @@ public class StartActivity extends AppCompatActivity {
     Toolbar toolbar;
     CalendarView calendarView;
     Button check_btn;
+    Button button;
 
     @Override
     protected void onCreate(Bundle bundle) {
@@ -35,6 +37,18 @@ public class StartActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+    }
+
+    @SuppressLint("ResourceAsColor")
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.button29:
+                button=findViewById(R.id.button29);
+                button.setBackgroundColor(R.color.purple_300);
+                break;
+        }
 
     }
 

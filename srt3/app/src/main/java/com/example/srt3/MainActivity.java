@@ -1,8 +1,10 @@
 package com.example.srt3;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     //출발 및 도착지 선택 부분 구현
     Button button_start,button_arrival,button_date;
+
+    //하단바 페이지 이동
+    Fragment fragment,fragment2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -229,6 +234,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //페이지 이동
+        fragment=new home();
+        fragment2=new check();
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.bottom_ticketing:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+//                        return true;
+//                    case R.id.bottom_register:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
     }
 
     @Override

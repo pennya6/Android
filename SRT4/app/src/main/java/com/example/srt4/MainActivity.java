@@ -1,31 +1,39 @@
-package com.example.srt3;
+package com.example.srt4;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+
+import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.io.FileReader;
 
 public class MainActivity extends AppCompatActivity {
 
-
     Toolbar mytoolbar;
+    //Fragment fragment1,fragment2;
     BottomNavigationView bottomNavigationView;
     ImageButton imageButton;
+
+    FragmentManager fragmentManager=getSupportFragmentManager();
 
     Button mbtn,pbtn,mbtn2,pbtn2,mbtn3,pbtn3,mbtn4,pbtn4,mbtn5,pbtn5,mbtn6,pbtn6;
     TextView nbtn,nbtn2,nbtn3,nbtn4,nbtn5,nbtn6;
@@ -34,9 +42,8 @@ public class MainActivity extends AppCompatActivity {
     //출발 및 도착지 선택 부분 구현
     Button button_start,button_arrival,button_date;
 
-    //하단바 페이지 이동
-    Fragment fragment,fragment2;
-    FragmentManager fragmentManager=getSupportFragmentManager();
+    private fragment_second fragment_second=new fragment_second();
+    private MainFragment fragment=new MainFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("");
+
+
+        FragmentTransaction transaction=fragmentManager.beginTransaction();
+        transaction.replace(R.id.container,fragment).commitAllowingStateLoss();
+        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment, fragment1).commit();
 
         imageButton=(ImageButton) findViewById(R.id.imageButton3);
         imageButton.bringToFront();
@@ -233,49 +249,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        //페이지 이동
-        fragment=new home();
-        fragment2=new check();
-
-//        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.frameLayout,fragment).commitAllowingStateLoss();
-
-//        bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
-
-
-        //getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
-
-//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                switch (item.getItemId()){
-//                    case R.id.bottom_ticketing:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
-//                        return true;
-//                    case R.id.bottom_register:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
-//                        return true;
-//                }
-//                return false;
-//            }
-//        });
     }
-//    class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener{
-//        @Override
-//        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
-//            FragmentTransaction transaction=fragmentManager.beginTransaction();
-//            switch (menuItem.getItemId()){
-//                case R.id.bottom_ticketing:
-//                    transaction.replace(R.id.frameLayout,fragment).commitAllowingStateLoss();
-//                    break;
-//                case R.id.bottom_register:
-//                    transaction.replace(R.id.frameLayout,fragment2).commitAllowingStateLoss();
-//                    break;
-//            }
-//            return true;
-//        }
-//    }
+
+    class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener{
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+            FragmentTransaction transaction=fragmentManager.beginTransaction();
+            switch (menuItem.getItemId()){
+                case R.id.bottom_ticketing:
+                    transaction.replace(R.id.container,fragment).commitAllowingStateLoss();
+                    break;
+                case R.id.bottom_register:
+                    transaction.replace(R.id.container,fragment_second).commitAllowingStateLoss();
+                    break;
+            }
+            return true;
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.srt2.ui.home.HomeFragment"
-        android:icon="@drawable/srt"
+
         tools:layout="@layout/fragment_home" />
 
     <fragment

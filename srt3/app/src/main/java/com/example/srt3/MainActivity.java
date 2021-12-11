@@ -5,6 +5,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Activity;
 import android.content.Context;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     //하단바 페이지 이동
     Fragment fragment,fragment2;
+    FragmentManager fragmentManager=getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -239,6 +242,12 @@ public class MainActivity extends AppCompatActivity {
         fragment=new home();
         fragment2=new check();
 
+//        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.frameLayout,fragment).commitAllowingStateLoss();
+
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+
+
         //getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
 
 //        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -256,6 +265,21 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
+//    class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener{
+//        @Override
+//        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+//            FragmentTransaction transaction=fragmentManager.beginTransaction();
+//            switch (menuItem.getItemId()){
+//                case R.id.bottom_ticketing:
+//                    transaction.replace(R.id.frameLayout,fragment).commitAllowingStateLoss();
+//                    break;
+//                case R.id.bottom_register:
+//                    transaction.replace(R.id.frameLayout,fragment2).commitAllowingStateLoss();
+//                    break;
+//            }
+//            return true;
+//        }
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

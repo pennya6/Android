@@ -23,14 +23,6 @@
             android:name=".SecondActivity"
             android:label="Second 액티비티">
         </activity>
-        <activity
-            android:name=".travelActivity"
-            android:label="travel 액티비티">
-        </activity>
-        <activity
-            android:name=".StartActivity"
-            android:label="start 액티비티">
-        </activity>
     </application>
 
 </manifest>

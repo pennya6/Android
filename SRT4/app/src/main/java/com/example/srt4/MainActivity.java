@@ -37,16 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager fragmentManager=getSupportFragmentManager();
 
-    Button mbtn,pbtn,mbtn2,pbtn2,mbtn3,pbtn3,mbtn4,pbtn4,mbtn5,pbtn5,mbtn6,pbtn6;
-    TextView nbtn,nbtn2,nbtn3,nbtn4,nbtn5,nbtn6;
-    int curNum=0,curNum2=0,curNum3=0,curNum4=0,curNum5=0,curNum6=0;
-
-    //출발 및 도착지 선택 부분 구현
-    Button button_start,button_arrival,button_date;
-
     private fragment_second fragment_second=new fragment_second();
     private MainFragment fragment=new MainFragment();
     private fragment_third fragment_third=new fragment_third();
+
+    private fragment_travel fragment_travel=new fragment_travel();
+    private fragment_start fragment_start=new fragment_start();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("SRT");
-
-
 
         getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment, fragment).commit();
 
@@ -94,39 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-        imageButton=(ImageButton) findViewById(R.id.imageButton3);
-        //imageButton.bringToFront();
-
-        mbtn=(Button) findViewById(R.id.minus_button1);
-        nbtn=(TextView) findViewById(R.id.textView1);
-        pbtn=(Button) findViewById(R.id.plus_button1);
-
-        mbtn2=(Button) findViewById(R.id.minus_button2);
-        nbtn2=(TextView) findViewById(R.id.textView2);
-        pbtn2=(Button) findViewById(R.id.plus_button2);
-
-        mbtn3=(Button) findViewById(R.id.minus_button3);
-        nbtn3=(TextView) findViewById(R.id.textView3);
-        pbtn3=(Button) findViewById(R.id.plus_button3);
-
-        mbtn4=(Button) findViewById(R.id.minus_button4);
-        nbtn4=(TextView) findViewById(R.id.textView4);
-        pbtn4=(Button) findViewById(R.id.plus_button4);
-
-        mbtn5=(Button) findViewById(R.id.minus_button5);
-        nbtn5=(TextView) findViewById(R.id.textView5);
-        pbtn5=(Button) findViewById(R.id.plus_button5);
-
-        mbtn6=(Button) findViewById(R.id.minus_button6);
-        nbtn6=(TextView) findViewById(R.id.textView6);
-        pbtn6=(Button) findViewById(R.id.plus_button6);
-
     }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -182,6 +144,16 @@ public class MainActivity extends AppCompatActivity {
                 });
         AlertDialog dialog=builder.create();
         dialog.show();
+    }
+
+    public void onFragmentChange(int fragmentNum){
+        if(fragmentNum==1){
+            getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment,fragment_start).commit();
+        }else if(fragmentNum==2){
+            getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment,fragment_travel).commit();
+        }else if(fragmentNum==3){
+            getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment,fragment).commit();
+        }
     }
 
 }

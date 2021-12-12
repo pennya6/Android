@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_listview_item.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\listview_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_korail_1.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\korail_1.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_main.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_ticket.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_ticket.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_banner3.PNG.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\banner3.PNG"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_people.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\people.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_srt_1.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\srt_1.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_settings.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_second.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\menu\\menu_second.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_people.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_people.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_start.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\fragment_start.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_third.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\fragment_third.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_srt.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\srt.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_travel.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_travel.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_korail_2.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\korail_2.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_banner.PNG.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\banner.PNG"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_train.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_train.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_srt_2.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\srt_2.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_ticket_check.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_ticket_check.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_banner2.PNG.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\banner2.PNG"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_cancel.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_cancel.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_second.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\second.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_travel.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\fragment_travel.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_background.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_main.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_chat.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\chat.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_change.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_change.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_re.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_re.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_me2.jpg.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\me2.jpg"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_listpoint.png.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\ic_listpoint.png"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_second.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_srt_button.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\drawable-v24\\srt_button.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\project\\SRT4\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_bottom.xml.flat",
+        "source": "D:\\Android\\project\\SRT4\\app\\src\\main\\res\\menu\\menu_bottom.xml"
+    }
+]

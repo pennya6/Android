@@ -31,7 +31,7 @@ import java.io.FileReader;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar mytoolbar;
-    //Fragment fragment1,fragment2;
+
     BottomNavigationView bottomNavigationView;
     ImageButton imageButton;
 
@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
                         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                         getSupportActionBar().setTitle("정기/회수승차권발권");
                         getSupportFragmentManager().beginTransaction().replace(R.id.mainFragment,fragment_third).commit();
+                        return true;
+                    case R.id.bottom_travel:
+                        showDialog_trl();
                         return true;
                 }
                 return false;
@@ -161,6 +164,19 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton("아니오", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+        AlertDialog dialog=builder.create();
+        dialog.show();
+    }
+    //여행상품 대화상자
+    void showDialog_trl(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this)
+                .setMessage("시스템 점검 중 입니다.")
+                .setPositiveButton("확인",new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialogInterface,int i) {
 
                     }
                 });
